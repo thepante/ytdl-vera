@@ -1,12 +1,29 @@
 #!/bin/bash
-sudo cp ./extractor/vera.py "${HOME}/.local/lib/python2.7/site-packages/youtube_dl/extractor/vera.py" && 
-echo "[1/5] Copiado a Python2.7..." &&
-cp ./extractor/vera.py "/usr/lib/python3/dist-packages/youtube_dl/extractor/vera.py" && 
-echo "[2/5] Copiado a Python3..." &&
-echo 'from .vera import VeraIE' >> ${HOME}/.local/lib/python2.7/site-packages/youtube_dl/extractor/extractors.py &&
-echo "[3/5] Incluido en youtube_dl Python2.7 ..." &&
-echo 'from .vera import VeraIE' >> /usr/lib/python3/dist-packages/youtube_dl/extractor/extractors.py &&
-echo "[4/5] Incluido en youtube_dl Python3 ..." &&
+
+PY2=${HOME}/.local/lib/python2.7/site-packages/youtube_dl/extractor
+PY3=/usr/lib/python3/dist-packages/youtube_dl/extractor
+
+if [ -d "$PY2" ]; then
+  cp ./extractor/vera.py "$PY2/vera.py" && 
+  echo 'from .vera import VeraIE' >> $PY2/extractors.py &&
+fi
+
+if [ -d "$PY3" ]; then
+  sudo cp ./extractor/vera.py "$PY3/vera.py" && 
+  echo 'from .vera import VeraIE' >> $PY3/extractors.py &&
+
+fi
+
+if [ -f $PY2/vera.py ]
+then
+    echo "Integrado a YT-DL Python2.7 ..." &&
+fi
+
+if [ -f $PY3/vera.py ]
+then
+  	echo "Integrado a YT-DL Python3 ..." &&
+fi
+
 cd .. && rm -rf ytdl-vera &&
-echo "[5/5] Autodestrucción de este repo..." &&
+echo "Autodestrucción de este repo temporal..." &&
 echo "[ ✓ ] Listo, probá youtube-dl."
