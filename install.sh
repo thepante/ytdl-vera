@@ -5,23 +5,23 @@ PY3=/usr/lib/python3/dist-packages/youtube_dl/extractor
 
 if [ -d "$PY2" ]; then
   cp ./extractor/vera.py "$PY2/vera.py" && 
-  echo 'from .vera import VeraIE' >> $PY2/extractors.py &&
+  echo 'from .vera import VeraIE' >> $PY2/extractors.py
 fi
 
 if [ -d "$PY3" ]; then
   sudo cp ./extractor/vera.py "$PY3/vera.py" && 
-  echo 'from .vera import VeraIE' >> $PY3/extractors.py &&
+  echo 'from .vera import VeraIE' >> $PY3/extractors.py
 
 fi
 
 if [ -f $PY2/vera.py ]
 then
-    echo "Integrado a YT-DL Python2.7 ..." &&
+    echo "Integrado a YT-DL Python2.7 ..."
 fi
 
 if [ -f $PY3/vera.py ]
 then
-  	echo "Integrado a YT-DL Python3 ..." &&
+  	echo "Integrado a YT-DL Python3 ..."
 fi
 
 cd .. && rm -rf ytdl-vera &&
