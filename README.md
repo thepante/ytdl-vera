@@ -1,14 +1,14 @@
 ## Extractor Vera
 Extractor que agrega la capacidad de descargar desde Vera (tv.vera.com.uy y veramas.com.uy).  
 
-### "Parcheá"
-Copiamos, pegamos esta linea en la terminal (es con sudo)
+## Tenelo
+Copiá y pegá esta línea en la terminal
 ```bash
 cd ~/.temp && git clone https://github.com/thepante/ytdl-vera.git && cd ./ytdl-vera && sudo sh ./install.sh && cd ~/
 ```
-Con eso se abre el "instalador" (install.sh) que hace los pasos necesarios para integrar este extractor. Pero soy un queso, así que tanto el .py como el .sh son re precarios, hay maneras de hacerlo mejor claro está, pero bueno, no tengo casi experiencia con esto.
+Con eso se abre el "instalador" (install.sh) que hace los pasos necesarios para integrar este extractor. Pero soy un queso, así que tanto el .py como el .sh son precarios, hay maneras de mejorarlos claro está, pero bueno, no tengo casi experiencia con esto.
 
-Si querés ayudar a mejorarlo, bárbaro, como ves soy alto kamikaze
+Si querés ayudar a mejorarlo, bárbaro avisame, como ves soy alto kamikaze
 
 ## Status
 - [x] Descarga videos desde tv.vera.com.uy<sup>**</sup>
