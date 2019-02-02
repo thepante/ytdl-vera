@@ -24,6 +24,6 @@ then
   	echo "Integrado a YT-DL Python3 ..."
 fi
 
-cd .. && rm -rf ytdl-vera &&
+cd .. && rm -rf ytdl-vera && cd ~ &
 echo "Autodestrucción de este repo temporal..." &&
 echo "[ ✓ ] Listo, probá youtube-dl."
