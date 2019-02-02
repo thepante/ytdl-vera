@@ -18,6 +18,7 @@ Si querés ayudar a mejorarlo, bárbaro, como ves soy alto kamikaze
 - [ ] Probar con otros flags
 
 > \* No escribí nada para ese dominio todavía. Así que por ahora solo detecta que es el extractor correspondiente para esa página (veramas), pero no puede extraer naranja. Cuando quede funcionando decentemente el dominio principal, me pongo con agregar las instrucciones para esta dirección secundaria.
+
 > \*\* Extrae audio pero igual (normal) descarga el video entero a máxima calidad. En mis prueba a llegado a pesar 1GB de descarga un capitulo de 45min. Tengo que ver como se hace para tomar diferentes calidades para poder elegir.
 
 **Por ahora funciona para lo básico**
