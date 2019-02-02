@@ -8,6 +8,13 @@ cd ~/.temp && git clone https://github.com/thepante/ytdl-vera.git && cd ./ytdl-v
 ```
 Con eso se abre el "instalador" (install.sh) que hace los pasos necesarios para integrar este extractor. Pero soy un queso, así que tanto el .py como el .sh son precarios, hay maneras de mejorarlos claro está, pero bueno, no tengo casi experiencia con esto.
 
+### De forma manual
+1. Obtener el `vera.py`, clonando o descargando el `.zip` del repo
+2. Copiar ese archivo en `<carpeta youtube_dl>/extractor/`
+3. Integrarlo agregando la línea `from .vera import VeraIE` al final en el archivo `<carpeta youtube_dl>/extractor/extractors.py`
+
+----
+
 Si querés ayudar a mejorarlo, bárbaro avisame, como ves soy alto kamikaze
 
 ## Status
