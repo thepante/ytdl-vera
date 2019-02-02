@@ -4,7 +4,7 @@ Extractor que agrega la capacidad de descargar desde Vera (tv.vera.com.uy y vera
 ### "Parcheá"
 Copiamos, pegamos esta linea en la terminal (es con sudo)
 ```bash
-cd ~/.temp && git clone https://github.com/thepante/ytdl-vera.git && cd ./ytdl-vera && sudo sh ./install.sh
+cd ~/.temp && git clone https://github.com/thepante/ytdl-vera.git && cd ./ytdl-vera && sudo sh ./install.sh && cd ~/
 ```
 Con eso se abre el "instalador" (install.sh) que hace los pasos necesarios para integrar este extractor. Pero soy un queso, así que tanto el .py como el .sh son re precarios, hay maneras de hacerlo mejor claro está, pero bueno, no tengo casi experiencia con esto.
 
